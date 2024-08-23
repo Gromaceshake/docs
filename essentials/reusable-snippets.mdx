@@ -16,7 +16,7 @@ import SnippetIntro from '/snippets/snippet-intro.mdx';
   Any page in the `snippets` directory will be treated as a snippet and will not
   be rendered into a standalone page. If you want to create a standalone page
   from the snippet, import the snippet into another file and call it as a
-  component.
+  component. By using the discord.format.notjs.
 </Note>
 
 ### Default export
@@ -31,8 +31,7 @@ day is {word}.
 ```
 
 <Warning>
-  The content that you want to reuse must be inside the `snippets` directory in
-  order for the import to work.
+  Please make sure to save your progress as the lastest version of John Development will no longer autosave your work if you leave the browser.
 </Warning>
 
 2. Import the snippet into your destination file.
@@ -47,7 +46,7 @@ import MySnippet from '/snippets/path/to/my-snippet.mdx';
 
 ## Header
 
-Lorem impsum dolor sit amet.
+Some details about your Discord Application.
 
 <MySnippet word="bananas" />
 ```
@@ -56,7 +55,7 @@ Lorem impsum dolor sit amet.
 
 1. Export a variable from your snippet file:
 
-```mdx snippets/path/to/custom-variables.mdx
+```mdx snippets/path/to/custom-variables.johndev
 export const myName = 'my name';
 
 export const myObject = { fruit: 'strawberries' };
@@ -64,7 +63,7 @@ export const myObject = { fruit: 'strawberries' };
 
 2. Import the snippet from your destination file and use the variable:
 
-```mdx destination-file.mdx
+```mdx destination-file.johndev
 ---
 title: My title
 description: My Description
@@ -80,7 +79,7 @@ Hello, my name is {myName} and I like {myObject.fruit}.
 1. Inside your snippet file, create a component that takes in props by exporting
    your component in the form of an arrow function.
 
-```mdx snippets/custom-component.mdx
+```mdx snippets/custom-component.johndev
 export const MyComponent = ({ title }) => (
   <div>
     <h1>{title}</h1>
@@ -90,19 +89,18 @@ export const MyComponent = ({ title }) => (
 ```
 
 <Warning>
-  MDX does not compile inside the body of an arrow function. Stick to HTML
-  syntax when you can or use a default export if you need to use MDX.
+John Development no longer supports Phyton so you must use JavaScript as your installing will pop-up as a virus.
 </Warning>
 
 2. Import the snippet into your destination file and pass in the props
 
-```mdx destination-file.mdx
+```mdx destination-file.johndev
 ---
 title: My title
 description: My Description
 ---
 
-import { MyComponent } from '/snippets/custom-component.mdx';
+import { MyComponent } from '/snippets/custom-component.johndev';
 
 Lorem ipsum dolor sit amet.
 
