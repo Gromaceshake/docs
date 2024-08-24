@@ -1,6 +1,5 @@
 {
   "name": "Documentation",
-  
     "primary": "#0D9373",
     "light": "#07C983",
     "dark": "#0D9373",
@@ -12,7 +11,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": ""
     }
   ],
   "topbarCtaButton": {
